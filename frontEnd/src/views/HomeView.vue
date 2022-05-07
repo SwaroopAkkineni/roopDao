@@ -4,6 +4,7 @@ import TheWelcome from '@/components/TheWelcome.vue'
 
 <template>
   <main>
-    <TheWelcome />
+    <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    <h1>Welcome to Swaroop's Hackathon project</h1>
   </main>
 </template>
