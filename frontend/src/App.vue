@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld msg="Welcome to SwaroopDao" />
+  <HelloWorld />
 </template>
 
 <script>

@@ -1,23 +1,19 @@
 <template>
   <div class="helloWorld">
-    <NavBar />
-    <div>{{ message }} page</div>
+    <NavBar @msg="message = $event" />
+    <AccountComponent :message="message" />
   </div>
 </template>
 
 <script>
-// import AccountComponent from './AccountComponent.vue'
+import AccountComponent from './mainBody/AccountComponent.vue'
 import NavBar from './navBar/NavBar.vue'
 
 export default {
-  props: {
-    msg: String,
-  },
   components: {
-    // AccountComponent,
+    AccountComponent,
     NavBar,
   },
-
   data() {
     return {
       message: 'Home',

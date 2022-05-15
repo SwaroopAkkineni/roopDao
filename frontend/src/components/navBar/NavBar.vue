@@ -8,9 +8,11 @@
 
 <script>
 export default {
+  name: 'NavBar',
   methods: {
     render(msg) {
-      this.$emit('message', msg)
+      console.log('NavBar: ' + msg)
+      this.$emit('msg', msg)
     },
   },
 }
