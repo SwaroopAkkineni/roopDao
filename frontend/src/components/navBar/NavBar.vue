@@ -12,7 +12,7 @@ export default {
   methods: {
     render(msg) {
       console.log('NavBar: ' + msg)
-      this.$emit('msg', msg)
+      this.$store.dispatch('pooperAction', msg)
     },
   },
 }

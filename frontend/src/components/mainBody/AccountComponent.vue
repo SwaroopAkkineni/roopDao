@@ -1,12 +1,20 @@
 <template>
   <div>
-    <div>{{ this.message }} page</div>
+    <div>{{ this.fullName }} pageddd</div>
   </div>
 </template>
 
 <script>
+// import { mapGetters } from 'vuex'
 export default {
-  props: ['message'],
+  computed: {
+    fullName: function () {
+      return this.$store.getters.currentWebPageGetter
+    },
+    // ...mapGetters({
+    //   poop: 'currentWebPageGetter',
+    // }),
+  },
 }
 </script>
 

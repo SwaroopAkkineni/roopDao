@@ -1,7 +1,7 @@
 <template>
   <div class="helloWorld">
     <NavBar @msg="message = $event" />
-    <AccountComponent :message="message" />
+    <AccountComponent />
   </div>
 </template>
 
@@ -13,11 +13,6 @@ export default {
   components: {
     AccountComponent,
     NavBar,
-  },
-  data() {
-    return {
-      message: 'Home',
-    }
   },
 }
 </script>
